@@ -2,14 +2,14 @@
 {
     internal class Truck : Transport
     {
-        private int _cost = 200;
-        private int _costPerKm = 15;
-        private double _costPerKg = 0.5;
-        const int _maxWeight = 1000;
-        public Truck() : base(_maxWeight) { }
+        const int Cost = 200;
+        const int CostPerKm = 15;
+        const double CostPerKg = 0.5;
+        const int WeightLimit = 1000;
+        public Truck() : base(WeightLimit) { }
         public override double CalculateCost(Order order)
         {
-            return _cost + (_costPerKm * order.Distance) + (_costPerKg * order.Weight);
+            return Cost + (CostPerKm * order.Distance) + (CostPerKg * order.Weight);
         }
     }
 }

@@ -2,7 +2,7 @@
 {
     abstract class Transport
     {
-        protected int MaxWeight;
+        protected int MaxWeight { get; }
         protected bool Availability = true;
         protected Transport(int maxWeight)
         {
