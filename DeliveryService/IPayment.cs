@@ -2,6 +2,6 @@
 {
     internal interface IPayment
     {
-        abstract void Pay(double sum);
+        void Pay(double sum);
     }
 }
